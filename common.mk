@@ -268,6 +268,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/linker/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Recovery
+TARGET_USES_AOSP_RECOVERY := true
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4.vendor:64 \
